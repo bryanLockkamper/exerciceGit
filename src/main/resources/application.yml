@@ -3,7 +3,7 @@ spring:
   datasource:
     username: db2admin
     password: Test1234=
-    url: jdbc:db2://localhost:50000/spring
+    url: jdbc:db2://localhost:50000/forum
   jpa:
     show-sql: true
     hibernate:
