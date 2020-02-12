@@ -18,10 +18,10 @@ public class Message {
     @Column(name = "Message_ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
-    @OneToOne
+    @ManyToOne
     @Column(name = "Message_ID_USER")
     private Long ID_USER;
-    @OneToOne
+    @ManyToOne
     @Column(name = "Message_ID_FORUM")
     private Long ID_FORUM;
     @Column(name = "Message_Content")
