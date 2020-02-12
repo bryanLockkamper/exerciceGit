@@ -1,4 +1,4 @@
-package com.example.forum.Dal.Entity;
+package com.example.forum.models.entities;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
