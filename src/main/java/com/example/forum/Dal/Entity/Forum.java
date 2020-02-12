@@ -4,6 +4,7 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -24,6 +25,10 @@ public class Forum {
     @Column(name ="Forum_name")
     private String nom;
 
-    
+    @OneToMany
+    private Set<Message> boiteMessage;
+
+    @ManyToMany
+    private Set<UserEntity> Users;
 
 }
