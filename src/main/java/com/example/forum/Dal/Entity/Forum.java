@@ -22,7 +22,7 @@ public class Forum {
     @Column(name = "Date_de_creation")
     private Date dateDeCreation;
 
-    @Column(name ="Forum_name")
+    @Column(unique = true ,name ="Forum_name")
     private String nom;
 
     @OneToMany
